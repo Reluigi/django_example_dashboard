@@ -217,14 +217,14 @@
                   </tr>
                 </tfoot-->
                 <tbody>
-                {% for employee in employees %}
+                {% for accountEntry in accountentries %}
                   <tr>
-                    <td>{{ employee.data }}</td>
-                    <td>{{ employee.conto }}</td>
-                    <td>{{ employee.entrate }}</td>
-                    <td>{{ employee.stipendio }}</td>
-                    <td>{{ employee.uscite }}</td>
-                    <td>${{ employee.saldo }}</td>
+                    <td>{{ accountEntry.data }}</td>
+                    <td>{{ accountEntry.conto }}</td>
+                    <td>{{ accountEntry.entrate }}</td>
+                    <td>{{ accountEntry.stipendio }}</td>
+                    <td>{{ accountEntry.uscite }}</td>
+                    <td>${{ accountEntry.saldo }}</td>
                   </tr>
                   {% endfor %}
                 </tbody>

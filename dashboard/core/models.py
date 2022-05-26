@@ -11,3 +11,15 @@ class Employee(models.Model):
 
     def __str__(self):
         return self.name
+
+class AccountEntry(models.Model):
+    DATA = models.DateField()
+    CONTO = models.CharField(max_length=50)
+    ENTRATE = models.FloatField()
+    STIPENDIO = models.FloatField()
+    USCITE = models.FloatField()
+    SALDO = models.FloatField()
+    VALUTA = models.IntegerField()
+
+    def __str__(self):
+        return self.name
